@@ -32,8 +32,7 @@ export default function RootLayout({
               jobTitle: 'Frontend Developer',
               url: 'https://mirakhmedov.uz',
               sameAs: [
-                'https://linkedin.com/in/mirakhmedov7
-                // ',
+                'https://linkedin.com/in/mirakhmedov7',
                 'https://github.com/mirakhmedov7',
               ],
             }),
