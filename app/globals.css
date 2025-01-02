@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @layer base {
@@ -69,4 +79,12 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.active span:first-child {
+  @apply bg-slate-200 w-16;
+}
+
+.active span:last-child {
+  @apply text-slate-200;
 }

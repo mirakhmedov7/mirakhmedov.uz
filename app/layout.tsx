@@ -18,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased bg-slate-900 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0`}>{children}</body>
+      <head>
+        <link rel="icon" href='./porticon.png' />
+      </head>
+      <body className={`${inter.className} antialiased bg-slate-900 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0 scroll-smooth`}>{children}</body>
     </html>
   )
 }
