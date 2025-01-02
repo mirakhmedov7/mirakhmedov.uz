@@ -88,3 +88,7 @@ body {
 .active span:last-child {
   @apply text-slate-200;
 }
+
+::selection {
+  @apply bg-teal-300 text-[#144E5E]
+}

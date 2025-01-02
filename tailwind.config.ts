@@ -25,7 +25,7 @@ export default {
           foreground: 'hsl(var(--primary-foreground))',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
+          DEFAULT: '#94a3b8',
           foreground: 'hsl(var(--secondary-foreground))',
         },
         muted: {
@@ -49,6 +49,10 @@ export default {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
+        },
+        green: {
+          DEFAULT: 'rgb(94 234 212 / var(--tw-bg-opacity, 1))',
+          foreground: '#152B39',
         },
       },
       borderRadius: {
@@ -75,17 +79,7 @@ export default {
           '"Noto Color Emoji"',
         ],
       },
-			container: {
-			center: true,
-			padding: '1.5rem',
-			screens: {
-				sm: '640px',
-				md: '768px',
-				lg: '1024px',
-				xl: '1280px',
-			},
-		},
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [],
 } satisfies Config
