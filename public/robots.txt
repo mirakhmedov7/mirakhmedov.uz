@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mirakhmedov.uz
+
+# Sitemaps
+Sitemap: https://mirakhmedov.uz/sitemap.xml
