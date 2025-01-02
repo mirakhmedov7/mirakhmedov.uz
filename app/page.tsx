@@ -1,4 +1,4 @@
-import { About, Header, Experience } from '@/components/'
+import { About, Header, Experience } from '@/components/index'
 
 export default function Home() {
   return (
