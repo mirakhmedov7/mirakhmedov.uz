@@ -1,13 +1,23 @@
-import { About, Header, Experience } from '@/components/index'
+import {
+  About,
+  Header,
+  Experience,
+  Projects,
+  Contact,
+} from '@/components/index'
 
 export default function Home() {
   return (
-    <div className="flex justify-between gap-4">
-      <Header />
-      <main className="flex flex-col w-1/2">
-        <About />
-        <Experience />
-      </main>
-    </div>
+    <>
+      <div className="flex justify-between gap-4">
+        <Header />
+        <main className="flex flex-col w-1/2">
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
+    </>
   )
 }

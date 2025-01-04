@@ -5,14 +5,16 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="pt-16 flex flex-col gap-5 before:block relative before:w-[2px] before:h-full before:bg-slate-100 before:absolute before:top-16 before:left-[30px] before:rounded-sm overflow-hidden"
+      className="mt-20 flex flex-col relative before:w-[2px] before:h-full before:bg-slate-100 scroll-mt-24"
     >
       {experiencedData.map((item, i) => (
-        <div key={i} className="flex justify-between gap-12 relative">
-          <div className="max-w-12 max-h-12 rounded-full bg-slate-900 border-2 border-white flex items-center justify-center text-white text-2xl w-full h-full after:block after:w-7 after:h-[2px] after:rounded-sm after:bg-slate-100 after:absolute after:top-[30px] after:left-[70px]">
-            {item.icon}
+        <div key={i} className="flex justify-between relative w-full">
+          <div className="max-w-12 w-full h-full flex flex-col items-center">
+            <div className="max-w-12 max-h-12 rounded-full bg-slate-900 border-2 border-white flex items-center justify-center text-white text-2xl w-full h-full">{item.icon}</div>
+            <span className='block w-[2px] h-full bg-slate-100'></span>
           </div>
-          <div className="flex flex-col">
+          <span className="block w-10 h-[2px] rounded-sm bg-slate-100 my-5 mx-3"></span>
+          <div className="flex flex-col w-full pb-5">
             <p className="text-secondary text-sm">{item.year}</p>
             <h1 className="text-white text-lg font-bold">{item.title}</h1>
             <p className="text-secondary text-sm">{item.description}</p>

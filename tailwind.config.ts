@@ -54,6 +54,9 @@ export default {
           DEFAULT: 'rgb(94 234 212 / var(--tw-bg-opacity, 1))',
           foreground: '#152B39',
         },
+        grey: {
+          DEFAULT: '#94a3b8',
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',
