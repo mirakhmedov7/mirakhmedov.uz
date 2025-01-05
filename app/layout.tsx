@@ -49,6 +49,7 @@ export default function RootLayout({
           content="https://www.mirakhmedov.uz/porticon.png"
         ></meta>
         <meta property="og:url" content="https://mirakhmedov.uz"></meta>
+        <meta name="google-site-verification" content="_7-N8cPugPZRvpzoqALvtizYDYMD-mURaJiE_zV-Qjw" />
       </head>
       <body className={`${inter.className} bg-slate-900 `}>{children}</body>
     </html>

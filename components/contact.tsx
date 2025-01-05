@@ -4,8 +4,29 @@ import { Textarea } from './ui/textarea'
 import { Button } from './ui/button'
 import { LuSend } from 'react-icons/lu'
 import Footer from './footer'
+// import { Resend } from 'resend'
+// import { sendEmail } from '@/action/sendEmail'
 
 const Contact = () => {
+  // const SubmitHandler = (e: React.FormEvent) => {
+  //   const name = ((e.currentTarget as HTMLFormElement)[0] as HTMLInputElement)
+  //     .value
+  //   const email = ((e.currentTarget as HTMLFormElement)[1] as HTMLInputElement)
+  //     .value
+  //   const message = (
+  //     (e.currentTarget as HTMLFormElement)[2] as HTMLInputElement
+  //   ).value
+  //   // sendEmail({ name, email, message })
+  //   const resend = new Resend(process.env.RESEND_API_KEY)
+
+  //   resend.emails.send({
+  //     from: email,
+  //     to: 'asliddingpt@gmail.com',
+  //     subject: name,
+  //     html: '<p>' + message + '</p>',
+  //   })
+  //   e.preventDefault()
+  // }
   return (
     <section
       id="contact"
@@ -19,7 +40,10 @@ const Contact = () => {
           </a>
           or through this form.
         </h2>
-        <form action="" className="flex flex-col gap-3 items-start">
+        <form
+          // onSubmit={SubmitHandler}
+          className="flex flex-col gap-3 items-start"
+        >
           <Input type="text" placeholder="Your name" />
           <Input type="email" placeholder="Your email" />
           <Textarea placeholder="Your message" className="min-h-32" />
