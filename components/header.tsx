@@ -13,7 +13,6 @@ const Header = () => {
     const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav__link')
     const sectionEls = document.querySelectorAll('section')
     let currentSection = location.hash.split('#')[1]
-    console.log(location.hash)
     if (location.hash == '') {
       navLinks[0].classList.add('active')
     }
@@ -39,7 +38,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="sticky top-0 text-white py-24 max-h-screen flex flex-col justify-between">
+    <header className="sticky top-0 text-white py-24 max-h-screen flex flex-col justify-between z-10">
       <div>
         <h1 className="text-[50px] font-bold tracking-tight text-slate-200 leading-10">
           Asliddin Mirakhmedov
@@ -62,7 +61,7 @@ const Header = () => {
               href={`#${item.href}`}
             >
               <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-              <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+              <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                 {item.title}
               </span>
             </a>
@@ -70,11 +69,11 @@ const Header = () => {
         ))}
       </ul>
       <ul
-        className="ml-1 mt-8 flex items-center gap-4"
+        className="ml-1 mt-8 flex items-center gap-4 text-grey"
         aria-label="Social media"
       >
         <a href="/cv.pdf" download>
-          <Button variant="secondary" className="bg-white hover:bg-slate-200">
+          <Button className="bg-green-foreground text-green hover:bg-green hover:text-[#144E5E]">
             Download CV <FiDownload />
           </Button>
         </a>

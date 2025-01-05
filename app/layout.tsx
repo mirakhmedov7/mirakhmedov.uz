@@ -50,11 +50,7 @@ export default function RootLayout({
         ></meta>
         <meta property="og:url" content="https://mirakhmedov.uz"></meta>
       </head>
-      <body
-        className={`${inter.className} antialiased bg-slate-900 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0 scroll-smooth`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.className} bg-slate-900 `}>{children}</body>
     </html>
   )
 }

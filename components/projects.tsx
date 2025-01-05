@@ -11,9 +11,9 @@ const Projects = () => {
         <Link key={i} href={item.link} target="_blank" className="group">
           <div className="flex justify-between w-full items-center mb-3 gap-3 hover:bg-slate-800/50 rounded-md p-7 drop-shadow-lg transition ease-in-out backdrop-blur-md">
             <div>
-              <h1 className="text-slate-200 text-lg flex items-center gap-2 group-hover:text-green transition ease-in-out">
+              <h2 className="text-slate-200 text-lg flex items-center gap-2 group-hover:text-green transition ease-in-out">
                 {item.title} <HiOutlineExternalLink />
-              </h1>
+              </h2>
               <p className="text-sm">{item.description}</p>
 
               <ul className="flex gap-1 mt-3 flex-wrap">

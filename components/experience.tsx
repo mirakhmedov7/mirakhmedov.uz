@@ -16,7 +16,7 @@ const Experience = () => {
           <span className="block w-10 h-[2px] rounded-sm bg-slate-100 my-5 mx-3"></span>
           <div className="flex flex-col w-full pb-5">
             <p className="text-secondary text-sm">{item.year}</p>
-            <h1 className="text-white text-lg font-bold">{item.title}</h1>
+            <h2 className="text-white text-lg font-bold">{item.title}</h2>
             <p className="text-secondary text-sm">{item.description}</p>
             <ul className="flex gap-1 mt-3 flex-wrap">
               {item.skills.map((name, i) => (
