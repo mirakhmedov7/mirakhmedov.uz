@@ -2,7 +2,7 @@ import {
   About,
   Header,
   Experience,
-  Projects,
+  // Projects,
   Contact,
   Cursor,
 } from '@/components/index'
