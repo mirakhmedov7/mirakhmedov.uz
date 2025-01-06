@@ -17,7 +17,7 @@ export default function Home() {
           <main className="flex flex-col lg:w-1/2 relative z-20">
             <About />
             <Experience />
-            <Projects />
+            {/* <Projects /> */}
             <Contact />
           </main>
         </div>
