@@ -7,16 +7,19 @@ import {
   Contact,
   Cursor,
 } from '@/components/index'
-import { MouseEvent, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
-  const [mouse, setMouse] = useState([0, 0])
-  const mouseMove = (e: MouseEvent) => {
-    setMouse([e.clientX, e.clientY])
-  }
+  const [isMobile, setIsMobile] = useState(window.innerWidth > 1024)
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth > 1024)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   return (
-    <div onMouseMove={mouseMove}>
-      <Cursor mouse={mouse}/>
+    <div>
+      {isMobile ? <Cursor /> : null}
       <div className="min-h-screen max-w-screen-xl px-6 z-0 mx-auto">
         <div className="flex lg:justify-between lg:gap-10 lg:flex-row flex-col">
           <Header />

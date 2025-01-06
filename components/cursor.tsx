@@ -1,14 +1,27 @@
 'use client'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
-const Cursor = ({ mouse }: { mouse: number[] }) => {
+const Cursor = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const ref = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    if (ref.current) {
-      ref.current.style.left = mouse[0] - 200 + 'px' 
-      ref.current.style.top = mouse[1] - 200 + 'px'
+    const handleMouseMove = (event: MouseEvent) => {
+      setMousePosition({ x: event.clientX, y: event.clientY })
     }
-  }, [mouse])
+
+    window.addEventListener('mousemove', handleMouseMove)
+
+    if (ref.current) {
+      ref.current.style.left = mousePosition.x - 300 + 'px'
+      ref.current.style.top = mousePosition.y - 300 + 'px'
+    }
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [mousePosition])
+  
   return (
     <div
       style={{
