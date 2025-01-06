@@ -1,3 +1,4 @@
+'use client'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -35,6 +36,7 @@ const Projects = () => {
                 alt={item.title}
                 width={150}
                 height={50}
+                quality={70}
               />
             </div>
           </Link>
