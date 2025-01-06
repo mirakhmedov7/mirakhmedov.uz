@@ -56,6 +56,9 @@ export default {
         },
         grey: {
           DEFAULT: '#94a3b8',
+        },
+        white: {
+          DEFAULT: '#C8D2ED',
         }
       },
       borderRadius: {
@@ -82,6 +85,10 @@ export default {
           '"Noto Color Emoji"',
         ],
       },
+      screens: {
+        '1130': '1130px',
+        '950': '950px'
+      }
     },
   },
   plugins: [],

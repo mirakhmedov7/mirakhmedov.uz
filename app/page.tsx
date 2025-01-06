@@ -16,11 +16,11 @@ export default function Home() {
   }
   return (
     <div onMouseMove={mouseMove}>
-      <Cursor mouse={mouse} />
-      <div className="min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0 scroll-smooth z-0 antialiased mx-auto">
-        <div className="flex justify-between gap-4">
+      <Cursor mouse={mouse}/>
+      <div className="min-h-screen max-w-screen-xl px-6 z-0 mx-auto">
+        <div className="flex lg:justify-between lg:gap-10 lg:flex-row flex-col">
           <Header />
-          <main className="flex flex-col w-1/2 relative z-20">
+          <main className="flex flex-col lg:w-1/2 relative z-20">
             <About />
             <Experience />
             <Projects />

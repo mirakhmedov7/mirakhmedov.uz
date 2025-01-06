@@ -2,8 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="text text-slate-400 pt-24">
-      <p>
+    <section id="about" className="text lg:pt-24">
+      <h2 className="lg:hidden text-white sm:text-2xl text-xl font-bold mb-5">
+        ABOUT
+      </h2>
+      <p className="text-grey text-base">
         I’m a developer passionate about crafting accessible, pixel-perfect user
         interfaces that blend thoughtful design with robust engineering. My
         favorite work lies at the intersection of design and development,

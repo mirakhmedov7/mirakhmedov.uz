@@ -38,9 +38,9 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="sticky top-0 text-white py-24 max-h-screen flex flex-col justify-between z-10">
+    <header className="lg:sticky top-0 text-white lg:py-24 py-16 max-h-screen flex flex-col justify-between z-10">
       <div>
-        <h1 className="text-[50px] font-bold tracking-tight text-slate-200 leading-10">
+        <h1 className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white">
           Asliddin Mirakhmedov
         </h1>
         <h3 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
@@ -53,21 +53,26 @@ const Header = () => {
           <HiLocationMarker /> Tashkent, Uzbekistan
         </p>
       </div>
-      <ul className="text-bold text-slate-400 uppercase text-sm mt-5 ease-linear">
-        {navigationData.map((item, i) => (
-          <li key={i} className="hover:text-slate-200 transition-all text-bold">
-            <a
-              className={`group inline-flex items-center py-2 nav__link `}
-              href={`#${item.href}`}
+      <nav className="text-bold text-slate-400 uppercase text-sm mt-5 ease-linear hidden lg:block">
+        <ul>
+          {navigationData.map((item, i) => (
+            <li
+              key={i}
+              className="hover:text-slate-200 transition-all text-bold"
             >
-              <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-              <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                {item.title}
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+              <a
+                className={`group inline-flex items-center py-2 nav__link `}
+                href={`#${item.href}`}
+              >
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
+                <span className="nav-text text-sm font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                  {item.title}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <ul
         className="ml-1 mt-8 flex items-center gap-4 text-grey"
         aria-label="Social media"

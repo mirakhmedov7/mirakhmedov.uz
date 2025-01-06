@@ -32,8 +32,9 @@ const Contact = () => {
       id="contact"
       className="pt-24 flex flex-col justify-between h-full pb-24"
     >
-      <div>
-        <h2 className="text-lg text-grey text-center mb-5">
+      <h2 className="lg:hidden text-white sm:text-2xl text-xl font-bold mb-5">CONTACT</h2>
+      <div className='sm:max-w-2xl mx-auto'>
+        <h2 className="sm:text-lg text-grey text-center mb-5 text-base">
           Please contact me directly at{' '}
           <a className="underline" href="mailto:mirakhmedov09@gmail.com">
             mirakhmedov09@gmail.com{' '}
