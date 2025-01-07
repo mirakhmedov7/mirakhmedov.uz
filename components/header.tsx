@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header className="lg:sticky top-0 text-white lg:py-24 py-16 max-h-screen flex flex-col justify-between z-10">
       <div>
-        <h1 className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white">
+        <h1 tabIndex={0} className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white focus:outline-none focus:outline-2 focus:outline-purple focus:outline-offset-4">
           Asliddin Mirakhmedov
         </h1>
         <h3 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
@@ -61,7 +61,7 @@ const Header = () => {
               className="hover:text-slate-200 transition-all text-bold"
             >
               <a
-                className={`group inline-flex items-center py-2 nav__link `}
+                className={`group inline-flex items-center py-2 nav__link focus:outline-none focus:outline-2 focus:outline-purple focus:outline-offset-4`}
                 href={`#${item.href}`}
               >
                 <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
@@ -80,7 +80,7 @@ const Header = () => {
         <a href="/cv.pdf" download>
           <Button className="bg-green-foreground text-green hover:bg-green hover:text-[#144E5E]">
             Download CV <FiDownload />
-          </Button>
+          </Button> 
         </a>
         <li className="shrink-0 text-xs">
           <a

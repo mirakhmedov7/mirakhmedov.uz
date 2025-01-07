@@ -59,6 +59,9 @@ export default {
         },
         white: {
           DEFAULT: '#C8D2ED',
+        },
+        purple: {
+          DEFAULT: '#9358ec',  
         }
       },
       borderRadius: {
