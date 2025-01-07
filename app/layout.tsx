@@ -40,6 +40,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <meta name="yandex-verification" content="b664473cbfb8a3bf" />
         <meta name="robots" content="index, follow"></meta>
         <meta property="og:title" content="Asliddin Mirakhmedov"></meta>
         <meta
@@ -55,7 +56,6 @@ export default function RootLayout({
           name="google-site-verification"
           content="_7-N8cPugPZRvpzoqALvtizYDYMD-mURaJiE_zV-Qjw"
         />
-        <meta name="yandex-verification" content="3f13e6ebd1bba3a4" />
       </head>
       <body className={`${inter.className} bg-slate-900 `}>
         {children}
