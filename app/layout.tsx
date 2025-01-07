@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -21,7 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=YOUR_TAG_ID"
+        ><Script/>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'YOUR_TAG_ID');
+                        `,
+          }}
+        />
         <link rel="icon" type="image/svg+xml" href="./porticon.png" />
         <link rel="canonical" href="https://mirakhmedov.uz/" />
         <script
