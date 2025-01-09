@@ -4,7 +4,6 @@ import { HiOutlineExternalLink } from 'react-icons/hi'
 import { SectionHeading } from '@/components/ui/section-heading'
 import imageUrlBuilder from '@sanity/image-url'
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
-// import { Skeleton } from '@/components/ui/skeleton'
 
 import { client } from '@/sanity/client'
 
@@ -17,10 +16,8 @@ type projectsDataType = {
 }
 
 const Projects = async () => {
-  const response = await fetch('/api/projects', {
-    next: { revalidate: 5000 },
-  })
-  const projectsData: projectsDataType[] = await response.json()
+  const query = `*[_type == 'projects']`
+  const projectsData: projectsDataType[] = await client.fetch(query)
   const builder = imageUrlBuilder(client)
   const urlFor = (source: SanityImageSource) => {
     return builder.image(source)
