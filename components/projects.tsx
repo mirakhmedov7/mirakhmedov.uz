@@ -17,7 +17,7 @@ type projectsDataType = {
 }
 
 const Projects = async () => {
-  const response = await fetch('http://localhost:3000/api/projects', {
+  const response = await fetch('/api/projects', {
     next: { revalidate: 5000 },
   })
   const projectsData: projectsDataType[] = await response.json()
