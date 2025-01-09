@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import {
   About,
   Header,
@@ -5,6 +6,7 @@ import {
   Projects,
   Contact,
   Cursor,
+  ProjectsLoading,
 } from '@/components/index'
 
 export default function Home() {
@@ -17,7 +19,9 @@ export default function Home() {
           <main className="flex flex-col lg:w-1/2 relative z-20">
             <About />
             <Experience />
-            <Projects />
+            <Suspense fallback={<ProjectsLoading />}>
+              <Projects />
+            </Suspense>
             <Contact />
           </main>
         </div>
