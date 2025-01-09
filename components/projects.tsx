@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { Suspense } from 'react'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import { SectionHeading } from '@/components/ui/section-heading'
 import imageUrlBuilder from '@sanity/image-url'
