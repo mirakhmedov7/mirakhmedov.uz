@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { SectionHeading } from '@/components/ui/section-heading'
-import { motion } from 'motion/react'
 
 const About = () => {
   return (
