@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Cursor />
       <div className="min-h-screen max-w-screen-xl px-6 z-0 mx-auto">
         <div className="flex lg:justify-between lg:gap-10 lg:flex-row flex-col">
@@ -22,6 +22,6 @@ export default function Home() {
           </main>
         </div>
       </div>
-    </div>
+    </>
   )
 }

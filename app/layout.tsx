@@ -4,6 +4,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Scroll from '@/components/scroll'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -59,7 +60,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} bg-slate-900 `}>
-        {children}
+        <Scroll>{children}</Scroll>   
         <Analytics />
         <SpeedInsights />
         <GoogleAnalytics gaId="G-HNKMR4SKGY" />

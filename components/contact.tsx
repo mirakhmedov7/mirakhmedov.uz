@@ -4,10 +4,10 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from './ui/textarea'
 import { Button } from './ui/button'
 import { LuSend } from 'react-icons/lu'
-import Footer from './footer'
 import { useForm } from 'react-hook-form'
 import type { FieldValues } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
+import { SectionHeading } from '@/components/ui/section-heading'
 
 const Contact = () => {
   const {
@@ -47,15 +47,13 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="pt-24 flex flex-col justify-between h-full pb-24"
+      className="pt-24 flex flex-col justify-between h-full lg:pb-24 pb-12"
     >
-      <h2 className="lg:hidden text-white sm:text-2xl text-xl font-bold mb-5">
-        CONTACT
-      </h2>
+      <SectionHeading text="CONTACT" />
       <div className="sm:max-w-2xl mx-auto">
-        <h2 className="sm:text-lg text-grey text-center mb-5 text-base">
-          Feel free to contact me - I am always open to interesting
-          opportunities and collaborations. Contact me directly at{' '}
+        <h2 className="sm:text-lg text-grey mb-5 text-base">
+          I am always open to interesting opportunities and collaborations.
+          Contact me directly at{' '}
           <a className="underline" href="mailto:mirakhmedov09@gmail.com">
             mirakhmedov09@gmail.com{' '}
           </a>
@@ -116,8 +114,18 @@ const Contact = () => {
             Submit <LuSend />
           </Button>
         </form>
+
+        <footer className="text-gray-500 mt-20 max-w-md w-full">
+          <small className="mb-2 block text-xs">
+            &copy; 2025 Asliddin. All rights reserved.
+          </small>
+          <p className="text-xs">
+            <span className="font-semibold">About this website:</span> built
+            with React & Next.js (App Router & Server Actions), TypeScript,
+            Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
+          </p>
+        </footer>
       </div>
-      <Footer />
     </section>
   )
 }

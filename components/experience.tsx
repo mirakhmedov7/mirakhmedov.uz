@@ -1,5 +1,6 @@
 import { experiencedData } from '@/lib/data'
 import React from 'react'
+import { SectionHeading } from './ui/section-heading'
 
 const Experience = () => {
   return (
@@ -7,7 +8,7 @@ const Experience = () => {
       id="experience"
       className="mt-20 flex flex-col relative before:w-[2px] before:h-full before:bg-slate-100 scroll-mt-24"
     >
-      <h2 className="lg:hidden text-white sm:text-2xl text-xl font-bold mb-5">EXPERIENCE</h2>
+      <SectionHeading text="EXPERIENCE" />
       {experiencedData.map((item, i) => (
         <div key={i} className="flex justify-between relative w-full">
           <div className="sm:flex flex-col items-center hidden">
