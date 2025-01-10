@@ -9,8 +9,8 @@ const About = () => {
       <SectionHeading text="ABOUT" />
       <Reveal>
         <p className="text-grey text-base md:text-lg" id="about-text">
-          I'm a <strong>Frontend Developer</strong> with more than 3 years of
-          expeience. With a passion for development, I take projects from
+          I&apos;m a <strong>Frontend Developer</strong> with more than 3 years
+          of expeience. With a passion for development, I take projects from
           ideation to launch, ensuring a seamless journey that leaves a lasting
           positive impact on the digital landscape and your business.
           <br />
