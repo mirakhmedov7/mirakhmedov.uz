@@ -6,6 +6,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
 
 import { client } from '@/sanity/client'
+import next from 'next'
 
 type projectsDataType = {
   Title: string
@@ -17,7 +18,11 @@ type projectsDataType = {
 
 const Projects = async () => {
   const query = `*[_type == 'projects']`
-  const projectsData: projectsDataType[] = await client.fetch(query)
+  const projectsData: projectsDataType[] = await client.fetch(
+    query,
+    undefined,
+    { next: { revalidate: 5000 } }
+  )
   const builder = imageUrlBuilder(client)
   const urlFor = (source: SanityImageSource) => {
     return builder.image(source)

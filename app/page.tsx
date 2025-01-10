@@ -3,7 +3,7 @@ import {
   About,
   Header,
   Experience,
-  // Projects,
+  Projects,
   Contact,
   Cursor,
   ProjectsLoading,
@@ -20,8 +20,7 @@ export default function Home() {
             <About />
             <Experience />
             <Suspense fallback={<ProjectsLoading />}>
-              {/* <Projects /> */}
-              <ProjectsLoading />
+              <Projects />
             </Suspense>
             <Contact />
           </main>

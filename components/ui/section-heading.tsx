@@ -14,7 +14,7 @@ export const SectionHeading = ({ text }: { text: string }) => {
         }}
         className="cursor-pointer"
       >
-        <h2 className="lg:hidden text-white text-xl font-bold">{text}</h2>
+        <h2 className="lg:hidden text-white text-lg font-bold">{text}</h2>
       </a>
     </div>
   )

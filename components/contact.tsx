@@ -22,6 +22,7 @@ const Contact = () => {
         const response = await fetch('/api/contact', {
           method: 'POST',
           body: JSON.stringify(dataForm),
+          next: { revalidate: 3600 },
         })
 
         const data = await response.json()
