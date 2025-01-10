@@ -89,23 +89,17 @@ body {
   @apply bg-teal-300 text-[#144E5E];
 }
 
-a,
-button {
+* {
   @apply focus-visible:outline-none focus-visible:outline-2 focus-visible:outline-purple focus-visible:outline-offset-4;
 }
-
-/* .line {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.char {
-   transform: translateY(115px);
-   transition: transform 0.5s;   
-} */
 
 .split-parent {
   overflow: hidden;
 }
 .split-child {
   display: inline-block;
+}
+
+.form *.div {
+  width: 100%;
 }

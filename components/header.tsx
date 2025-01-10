@@ -7,7 +7,7 @@ import { FiDownload } from 'react-icons/fi'
 import { HiLocationMarker } from 'react-icons/hi'
 import { navigationData } from '@/lib/data'
 import { useLenis } from 'lenis/react'
-import { TextAnimation } from '@/components/index'
+import { Reveal } from '@/components/index'
 
 const Header = () => {
   useEffect(() => {
@@ -44,28 +44,27 @@ const Header = () => {
   return (
     <header className="lg:sticky top-0 text-white lg:py-24 py-16 max-h-screen flex flex-col justify-between z-10">
       <div>
-        <TextAnimation>
-          <h1
-            id="title"
-            tabIndex={0}
-            className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white focus:outline-none focus:outline-2 focus:outline-purple focus:outline-offset-4 target leading-8"
-          >
-            Asliddin Mirakhmedov
-          </h1>
-        </TextAnimation>
-        <TextAnimation>
-          <h3
-            id="job"
-            className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"
-          >
-            Front End Engineer
-          </h3>
-        </TextAnimation>
-        <TextAnimation>
-          <p id="info" className="mt-4 max-w-xs leading-normal text-slate-400">
-            I build accessible, pixel-perfect digital experiences for the web.
-          </p>
-        </TextAnimation>
+        <h1
+          id="title"
+          tabIndex={0}
+          className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white focus-visible:outline-none focus-visible:outline-2 focus-visible:outline-purple focus-visible:outline-offset-4 leading-8"
+        >
+          Asliddin Mirakhmedov
+        </h1>
+
+        <h3
+          id="job"
+          className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"
+        >
+          Front End Engineer
+        </h3>
+
+        <p id="info" className="mt-4 max-w-xs leading-normal text-slate-400">
+          {/* I build accessible, pixel-perfect digital experiences for the web. */}
+          I’m a software engineer specializing in building exceptional digital
+          experiences
+        </p>
+
         <p className="mt-4 max-w-xs leading-normal text-slate-400 flex gap-1 items-center">
           <HiLocationMarker /> Tashkent, Uzbekistan
         </p>
