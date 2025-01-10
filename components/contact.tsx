@@ -29,12 +29,12 @@ const Contact = () => {
 
         if (data) {
           reset()
-          resolve() // Resolve the promise if successful
+          resolve()
         } else {
-          reject(new Error('Failed to send message.')) // Reject the promise if unsuccessful
+          reject(new Error('Failed to send message.')) 
         }
       } catch (error) {
-        reject(error) // Reject the promise if there is an error
+        reject(error) 
       }
     })
   }

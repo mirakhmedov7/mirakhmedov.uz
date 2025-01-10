@@ -21,9 +21,3 @@ export async function POST(req: Request) {
     return Response.json({ error }, { status: 500 })
   }
 }
-
-export async function GET() {
-  // const query = `*[_type == 'projects']`
-  // const posts = await client.fetch(query)
-  return Response.json({ message: 'Hello from the API!' })
-}

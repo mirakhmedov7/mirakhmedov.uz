@@ -44,13 +44,6 @@ const Header = () => {
     <header className="lg:sticky top-0 text-white lg:py-24 py-16 max-h-screen flex flex-col justify-between z-10">
       <div>
         <h1
-          // variants={{
-          //   hidden: { opacity: 0, y: 30 },
-          //   visible: { opacity: 1, y: 0 },
-          // }}
-          // initial="hidden"
-          // whileInView="visible"
-          // transition={{ duration: 0.3, delay: 0.1 }}
           tabIndex={0}
           className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white focus:outline-none focus:outline-2 focus:outline-purple focus:outline-offset-4"
         >

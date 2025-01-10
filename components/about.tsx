@@ -8,13 +8,6 @@ const About = () => {
       <SectionHeading text="ABOUT" />
       <p
         className="text-grey text-base"
-        // variants={{
-        //   hidden: { opacity: 0, y: 30 },
-        //   visible: { opacity: 1, y: 0 },
-        // }}
-        // initial="hidden"
-        // whileInView="visible"
-        // transition={{ duration: 0.3, delay: 0.1 }}
       >
         I’m a developer passionate about crafting accessible, pixel-perfect user
         interfaces that blend thoughtful design with robust engineering. My
