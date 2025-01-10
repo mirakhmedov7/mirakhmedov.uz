@@ -7,6 +7,7 @@ import { FiDownload } from 'react-icons/fi'
 import { HiLocationMarker } from 'react-icons/hi'
 import { navigationData } from '@/lib/data'
 import { useLenis } from 'lenis/react'
+import { TextAnimation } from '@/components/index'
 
 const Header = () => {
   useEffect(() => {
@@ -43,18 +44,28 @@ const Header = () => {
   return (
     <header className="lg:sticky top-0 text-white lg:py-24 py-16 max-h-screen flex flex-col justify-between z-10">
       <div>
-        <h1
-          tabIndex={0}
-          className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white focus:outline-none focus:outline-2 focus:outline-purple focus:outline-offset-4"
-        >
-          Asliddin Mirakhmedov
-        </h1>
-        <h3 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Front End Engineer
-        </h3>
-        <p className="mt-4 max-w-xs leading-normal text-slate-400">
-          I build accessible, pixel-perfect digital experiences for the web.
-        </p>
+        <TextAnimation>
+          <h1
+            id="title"
+            tabIndex={0}
+            className="text-4xl md:text-5xl lg:text-[2.6rem] 1130:text-5xl font-bold tracking-tight text-white focus:outline-none focus:outline-2 focus:outline-purple focus:outline-offset-4 target leading-8"
+          >
+            Asliddin Mirakhmedov
+          </h1>
+        </TextAnimation>
+        <TextAnimation>
+          <h3
+            id="job"
+            className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"
+          >
+            Front End Engineer
+          </h3>
+        </TextAnimation>
+        <TextAnimation>
+          <p id="info" className="mt-4 max-w-xs leading-normal text-slate-400">
+            I build accessible, pixel-perfect digital experiences for the web.
+          </p>
+        </TextAnimation>
         <p className="mt-4 max-w-xs leading-normal text-slate-400 flex gap-1 items-center">
           <HiLocationMarker /> Tashkent, Uzbekistan
         </p>
@@ -70,7 +81,7 @@ const Header = () => {
                 className={`group inline-flex items-center py-2 nav__link`}
                 href={`#${item.href}`}
                 onClick={() => {
-                  lenis?.scrollTo(`#${item.href}`, {lerp: 0.07})
+                  lenis?.scrollTo(`#${item.href}`, { lerp: 0.07 })
                 }}
               >
                 <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>

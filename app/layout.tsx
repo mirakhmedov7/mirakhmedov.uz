@@ -1,13 +1,35 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Scroll from '@/components/scroll'
+import localFont from 'next/font/local'
 
-const inter = Inter({
-  subsets: ['latin'],
+const satoshi = localFont({
+  src: [
+    {
+      path: '../public/fonts/Satoshi-Bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Satoshi-Light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Satoshi-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/general sans/GeneralSans-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-satoshi',
 })
 
 export const metadata: Metadata = {
@@ -59,8 +81,8 @@ export default function RootLayout({
           content="_7-N8cPugPZRvpzoqALvtizYDYMD-mURaJiE_zV-Qjw"
         />
       </head>
-      <body className={`${inter.className} bg-slate-900 `}>
-        <Scroll>{children}</Scroll>   
+      <body className={`${satoshi.className} bg-slate-900 antialiased`}>
+        <Scroll>{children}</Scroll>
         <Analytics />
         <SpeedInsights />
         <GoogleAnalytics gaId="G-HNKMR4SKGY" />

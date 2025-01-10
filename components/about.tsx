@@ -1,14 +1,14 @@
 'use client'
 import React from 'react'
 import { SectionHeading } from '@/components/ui/section-heading'
+// import { TextAnimation } from '@/components/index'
 
 const About = () => {
   return (
     <section id="about" className="lg:pt-24">
       <SectionHeading text="ABOUT" />
-      <p
-        className="text-grey text-base"
-      >
+      {/* <TextAnimation> */}
+      <p className="text-grey text-base md:text-lg" id="about-text">
         I’m a developer passionate about crafting accessible, pixel-perfect user
         interfaces that blend thoughtful design with robust engineering. My
         favorite work lies at the intersection of design and development,
@@ -27,6 +27,7 @@ const About = () => {
         also dedicate time to coding, creating user-friendly websites, and
         exploring new skills or ideas to keep learning and growing.
       </p>
+      {/* </TextAnimation> */}
     </section>
   )
 }
