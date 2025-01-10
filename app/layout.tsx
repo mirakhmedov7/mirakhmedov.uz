@@ -33,9 +33,20 @@ const satoshi = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Asliddin Mirakhmedov',
+  title: 'Asliddin Mirakhmedov | Frontend Developer',
   description:
-    'Asliddin Mirakhmedov is a software engineer dedicated to creating accessible and inclusive digital experiences and web-based products.',
+    'Asliddin Mirakhmedov is a software engineer specializing in building exceptional digital experiences',
+  keywords:
+    'Asliddin, Mirakhmedov, Frontend Developer, Front End Engineer, Portfolio, Programmer, Frontend Portfolio',
+  authors: [{ name: 'Asliddin Mirakhmedov' }],
+  openGraph: {
+    type: 'website',
+    title: 'Asliddin Mirakhmedov | Frontend Developer',
+    description:
+      'Asliddin Mirakhmedov is a software engineer specializing in building exceptional digital experiences',
+    locale: 'en-US',
+    url: 'https://mirakhmedov.uz',
+  },
 }
 
 export default function RootLayout({
@@ -46,7 +57,33 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="./porticon.png" />
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+        <link
+          rel="icon"
+          href="/assets/favicon-32x32.png"
+          sizes="32x32"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="/assets/favicon-16x16.png"
+          sizes="16x16"
+          type="image/png"
+        />
+        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/assets/android-chrome-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/assets/android-chrome-512x512.png"
+        />
+
         <link rel="canonical" href="https://mirakhmedov.uz/" />
         <script
           type="application/ld+json"
@@ -66,16 +103,10 @@ export default function RootLayout({
         />
         <meta name="yandex-verification" content="b664473cbfb8a3bf" />
         <meta name="robots" content="index, follow"></meta>
-        <meta property="og:title" content="Asliddin Mirakhmedov"></meta>
-        <meta
-          property="og:description"
-          content="Asliddin Mirakhmedov is a software engineer dedicated to creating accessible and inclusive digital experiences and web-based products."
-        ></meta>
         <meta
           property="og:image"
-          content="https://www.mirakhmedov.uz/porticon.png"
+          content="https://www.mirakhmedov.uz/og-image.png"
         ></meta>
-        <meta property="og:url" content="https://mirakhmedov.uz"></meta>
         <meta
           name="google-site-verification"
           content="_7-N8cPugPZRvpzoqALvtizYDYMD-mURaJiE_zV-Qjw"

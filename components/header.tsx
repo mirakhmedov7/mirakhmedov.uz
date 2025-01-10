@@ -7,7 +7,6 @@ import { FiDownload } from 'react-icons/fi'
 import { HiLocationMarker } from 'react-icons/hi'
 import { navigationData } from '@/lib/data'
 import { useLenis } from 'lenis/react'
-import { Reveal } from '@/components/index'
 
 const Header = () => {
   useEffect(() => {

@@ -9,17 +9,15 @@ const About = () => {
       <SectionHeading text="ABOUT" />
       <Reveal>
         <p className="text-grey text-base md:text-lg" id="about-text">
-          I’m a developer passionate about crafting accessible, pixel-perfect
-          user interfaces that blend thoughtful design with robust engineering.
-          My favorite work lies at the intersection of design and development,
-          creating experiences that not only look great but are meticulously
-          built for performance and usability.
+          I'm a <strong>Frontend Developer</strong> with more than 3 years of
+          expeience. With a passion for development, I take projects from
+          ideation to launch, ensuring a seamless journey that leaves a lasting
+          positive impact on the digital landscape and your business.
           <br />
           <br />
-          Currently, I am dedicating my time and effort to preparing for the
-          IELTS exam, focusing on improving my language skills across all
-          sections, including listening, reading, writing, and speaking, to
-          achieve a high score and meet my goals.
+          Creating great web experiences is my primary focus. I ensure each
+          project leaves users with a feel-good sensation through meticulous
+          attention to detail and user-centric design principles.
           <br />
           <br />
           In my spare time, I enjoy reading books on personal growth and

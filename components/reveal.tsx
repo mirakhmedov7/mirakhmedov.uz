@@ -1,7 +1,6 @@
 'use client'
 import React, { useRef, JSX } from 'react'
 import { motion } from 'framer-motion'
-import { cx } from 'class-variance-authority'
 
 type Props = {
   children: JSX.Element
