@@ -33,19 +33,33 @@ const satoshi = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Asliddin Mirakhmedov | Frontend Developer',
+  metadataBase: new URL('https://mirakhmedov.uz'),
+  title: {
+    default: 'Asliddin Mirakhmedov',
+    template: ' %s | Asliddin Mirakhmedov',
+  },
   description:
     'Asliddin Mirakhmedov is a software engineer specializing in building exceptional digital experiences',
-  keywords:
-    'Asliddin, Mirakhmedov, Frontend Developer, Front End Engineer, Portfolio, Programmer, Frontend Portfolio',
+  keywords: [
+    'Asliddin',
+    'Mirakhmedov',
+    'Frontend Developer',
+    'Front End Engineer',
+    'Portfolio',
+    'Programmer',
+    'Frontend Portfolio',
+  ],
   authors: [{ name: 'Asliddin Mirakhmedov' }],
   openGraph: {
     type: 'website',
-    title: 'Asliddin Mirakhmedov | Frontend Developer',
+    title: 'Asliddin Mirakhmedov',
     description:
       'Asliddin Mirakhmedov is a software engineer specializing in building exceptional digital experiences',
     locale: 'en-US',
     url: 'https://mirakhmedov.uz',
+  },
+  twitter: {
+    card: 'summary_large_image',
   },
 }
 
@@ -57,33 +71,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-        <link
-          rel="icon"
-          href="/assets/favicon-32x32.png"
-          sizes="32x32"
-          type="image/png"
-        />
-        <link
-          rel="icon"
-          href="/assets/favicon-16x16.png"
-          sizes="16x16"
-          type="image/png"
-        />
-        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
         <link
           rel="icon"
           type="image/png"
-          sizes="192x192"
-          href="/assets/android-chrome-192x192.png"
+          href="/favicon-96x96.png"
+          sizes="96x96"
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
-          href="/assets/android-chrome-512x512.png"
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
         />
-
+        <meta name="apple-mobile-web-app-title" content="Asliddin" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link rel="canonical" href="https://mirakhmedov.uz/" />
         <script
           type="application/ld+json"
@@ -105,7 +107,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"></meta>
         <meta
           property="og:image"
-          content="https://www.mirakhmedov.uz/assets/og-image.png"
+          content="https://www.mirakhmedov.uz/og.png"
         ></meta>
         <meta
           name="google-site-verification"
