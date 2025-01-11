@@ -17,11 +17,7 @@ type projectsDataType = {
 
 const Projects = async () => {
   const query = `*[_type == 'projects']`
-  const projectsData: projectsDataType[] = await client.fetch(
-    query,
-    undefined,
-    { next: { revalidate: 5000 } }
-  )
+  const projectsData: projectsDataType[] = await client.fetch(query)
   const builder = imageUrlBuilder(client)
   const urlFor = (source: SanityImageSource) => {
     return builder.image(source)
@@ -40,15 +36,9 @@ const Projects = async () => {
             >
               <div className="flex justify-between w-full items-start gap-3 lg:hover:bg-slate-800/50 rounded-md lg:p-7 md:p-3 lg:transition lg:ease-in-out backdrop-blur-md sm:flex-row md:flex-col 950:flex-row lg:flex-row flex-col h-full lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]">
                 <div>
-                  <Link
-                    href={item.links}
-                    target="_blank"
-                    className='focus-visible:outline-none focus-visible:outline-2 focus-visible:outline-purple focus-visible:outline-offset-4'
-                  >
-                    <h2 className="text-slate-200 text-lg flex items-center gap-2 lg:group-hover:text-green">
-                      {item.Title} <HiOutlineExternalLink />
-                    </h2>
-                  </Link>
+                  <h2 className="text-slate-200 text-lg flex items-center gap-2 lg:group-hover:text-green">
+                    {item.Title} <HiOutlineExternalLink />
+                  </h2>
                   <p className="text-sm">{item.description}</p>
 
                   <ul className="flex gap-1 mt-3 flex-wrap">

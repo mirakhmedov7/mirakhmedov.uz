@@ -105,7 +105,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"></meta>
         <meta
           property="og:image"
-          content="https://www.mirakhmedov.uz/og-image.png"
+          content="https://www.mirakhmedov.uz/assets/og-image.png"
         ></meta>
         <meta
           name="google-site-verification"

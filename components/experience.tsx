@@ -5,8 +5,10 @@ import React from 'react'
 import { SectionHeading } from './ui/section-heading'
 import Reveal from './reveal'
 import { motion } from 'framer-motion'
+import { useScreen } from '@/hooks/index'
 
 const Experience = () => {
+  const isMobile = useScreen(640)
   return (
     <section
       id="experience"
@@ -60,7 +62,7 @@ const Experience = () => {
               className="sm:block hidden h-[2px] rounded-sm bg-slate-100"
             ></motion.span>
           </div>
-          <Reveal className="" slidePosition="x">
+          <Reveal slidePosition={isMobile ? 'y' : 'x'}>
             <div className="flex flex-col w-full pb-10">
               <p className="text-secondary text-sm">{item.year}</p>
               <h2 tabIndex={0} className="text-white text-lg font-bold">

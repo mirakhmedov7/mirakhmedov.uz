@@ -11,7 +11,7 @@ type ExperiencedData = {
 
 export const experiencedData: ExperiencedData[] = [
   {
-    title: 'Graduated Web-Development course at proweb.uz',
+    title: 'Finished the Web Development course at Proweb',
     description:
       'Successfully completed a Web Development course at proweb.uz, acquiring in-depth knowledge of HTML, CSS, and JavaScript, as well as experience with modern frameworks. Learned to build responsive websites, follow best coding practices, and create user-friendly designs, preparing for real-world web development challenges.',
     year: '2021 - 2022',
@@ -22,26 +22,27 @@ export const experiencedData: ExperiencedData[] = [
       'Gulp',
       'SCSS',
       'JavaScript',
+      'Vue.js',
       'PHP',
       'MySQL',
-      'Vue.js',
     ],
     icon: <LuGraduationCap />,
   },
   {
-    title: 'Graduated Full Stack Python course at ba.uz',
+    title: 'Finished Full Stack Python course at ba.uz',
     description:
-      'Successfully completed the Full Stack Python course at ba.uz, gaining expertise in Python programming, backend development with frameworks like Django/Flask, and frontend technologies. Acquired skills in database management, API integration, and deploying full-stack web applications, equipping for versatile software development roles."',
+      'Sharpened expertise in JavaScript programming, frontend development using frameworks like React and Next.js, and backend technologies. Gained hands-on experience with Node.js for building full-stack web applications and integrating APIs. Additionally, acquired proficiency in Prisma and PostgreSQL, leveraging them to implement efficient CRUD operations within Next.js projects.',
     year: '2022 - 2023',
     skills: [
       'Python',
+      'Node.js',
       'React',
       'Next.js',
-      'Node.js',
       'Tailwind CSS',
       'TypeScript',
-      '.NET',
-      'C#',
+      'Redux Toolkit',
+      'Prisma',
+      'PostgreSQL',
     ],
     icon: <LuGraduationCap />,
   },
@@ -57,8 +58,6 @@ export const experiencedData: ExperiencedData[] = [
       'Tailwind CSS',
       'Shadcn UI',
       'Swiper',
-      'Framer Motion',
-      'Strapi CMS',
     ],
     icon: <CgWorkAlt />,
   },
