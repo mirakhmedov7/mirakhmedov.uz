@@ -61,6 +61,11 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  icons: [
+    {
+      url: '/favicon.ico',
+    },
+  ],
 }
 
 export default function RootLayout({
@@ -74,15 +79,15 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/png"
-          href="/favicon-96x96.png"
+          href="./favicon-96x96.png"
           sizes="96x96"
         />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <link rel="shortcut icon" href="./favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="./apple-touch-icon.png"
         />
         <meta name="apple-mobile-web-app-title" content="Asliddin" />
         <link rel="manifest" href="/site.webmanifest" />
